@@ -1,0 +1,14 @@
+<button (click)="scanner.open()">Scan ITF</button>
+
+scan value {{last}}
+
+<div class="app-shell">
+  <!-- your normal app UI goes here -->
+
+</div>
+
+<!-- keep the overlay component *outside* app-shell so it stays visible -->
+<app-scanner-overlay #scanner
+  (scanned)="onScanned($event)"
+  (closed)="onClosed()">
+</app-scanner-overlay>

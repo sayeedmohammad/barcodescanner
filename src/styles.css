@@ -1,0 +1,7 @@
+/* Instead of hiding the whole body, hide only your app UI */
+body.scanner-active .app-shell {
+  visibility: hidden;
+}
+
+/* Ensure the overlay can be seen over the camera preview */
+html, body { background: transparent; }

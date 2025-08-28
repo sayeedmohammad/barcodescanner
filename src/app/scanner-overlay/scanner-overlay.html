@@ -1,0 +1,15 @@
+<div class="barcode-overlay" *ngIf="active" aria-live="polite">
+  <button class="btn close" type="button" (click)="close()" aria-label="Close scanner">
+    <svg viewBox="0 0 24 24" width="26" height="26"><path d="M18.3 5.7a1 1 0 0 0-1.4-1.4L12 9.17 7.1 4.3A1 1 0 0 0 5.7 5.7L10.6 10.6 5.7 15.5a1 1 0 1 0 1.4 1.4L12 12l4.9 4.9a1 1 0 0 0 1.4-1.4L13.4 10.6z"/></svg>
+  </button>
+  <div class="viewfinder-rect" aria-hidden="true"></div>
+
+ <!--  <div class="controls">
+    <button class="btn torch" type="button" (click)="toggleTorch()" [attr.aria-pressed]="torchOn">
+      <svg viewBox="0 0 24 24" width="26" height="26"><path d="M7 2h10v4l-3 4v9a3 3 0 1 1-6 0V10L7 6V2zm2 2v2l2 2h2l2-2V4H9zm2 8v9a1 1 0 0 0 2 0v-9h-2z"/></svg>
+      <span class="torch-label">{{ torchOn ? 'Torch On' : 'Torch Off' }}</span>
+    </button>
+  </div> -->
+
+  <div class="hint">Align the full length of the barcode inside the rectangle</div>
+</div>
