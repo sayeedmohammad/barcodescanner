@@ -1,7 +1,10 @@
-/* Instead of hiding the whole body, hide only your app UI */
+/* Hide your app shell when scanner is active */
 body.scanner-active .app-shell {
   visibility: hidden;
 }
 
-/* Ensure the overlay can be seen over the camera preview */
-html, body { background: transparent; }
+/* Make background transparent only during scanner */
+body.scanner-active,
+body.scanner-active html {
+  background: transparent !important;
+}
