@@ -12,4 +12,7 @@
     <div class="error" *ngIf="error">{{ error }}</div>
     <button type="submit">Login</button>
   </form>
+  <div class="biometric-row" *ngIf="biometricAvailable && biometricOptIn">
+    <button type="button" (click)="signInWithBiometrics()">Sign in with {{ biometryLabel }}</button>
+  </div>
 </div>
