@@ -1,3 +1,6 @@
+@import "tailwindcss";
+
+
 /* Hide your app shell when scanner is active */
 body.scanner-active .app-shell {
   visibility: hidden;

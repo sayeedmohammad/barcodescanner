@@ -1,0 +1,15 @@
+<div class="login-container">
+  <h2>Login</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-row">
+      <label for="username">User ID</label>
+      <input id="username" name="username" type="text" [(ngModel)]="username" required />
+    </div>
+    <div class="form-row">
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" [(ngModel)]="password" required />
+    </div>
+    <div class="error" *ngIf="error">{{ error }}</div>
+    <button type="submit">Login</button>
+  </form>
+</div>
