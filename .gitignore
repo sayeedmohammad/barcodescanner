@@ -26,3 +26,16 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.history/
+
+# Firebase local state
+.firebase/
+
+# Local env variants
+.env.*
